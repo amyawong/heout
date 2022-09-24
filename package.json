@@ -27,7 +27,7 @@
     "eject": "react-scripts eject",
     "seed": "node script/seed.js",
     "build-webpack": "webpack",
-    "build-webpack:dev": "npm run build-webpack -- --watch --mode=development --entry ./client/index.js"
+    "build-webpack:dev": "npm run build-webpack -- --watch --mode=development"
   },
   "eslintConfig": {
     "extends": [
