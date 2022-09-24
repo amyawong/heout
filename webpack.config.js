@@ -1,18 +1,23 @@
 module.exports = {
-  entry: ['./client/index.js'],
+  // entry: {
+  //   // entry: ["@babel/polyfill", "./client/index.js"],
+  //   // entry: path.join(__dirname, "./client/index.js"),
+  // },
+  mode: "development",
+  entry: ["./client/index.js"],
   output: {
     path: __dirname,
-    filename: './public/bundle.js',
+    filename: "bundle.js",
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         options: {
-          presets: ['@babel/preset-react'],
+          presets: ["@babel/preset-react"],
         },
       },
     ],
